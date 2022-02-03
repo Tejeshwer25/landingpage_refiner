@@ -1,0 +1,69 @@
+.helpForm {
+    display: none;
+    margin: 2rem 0rem 0rem 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 25%;
+    height: 25rem;
+}
+
+.helpForm > header{
+    border-bottom: 1px solid var(--light_text_color);
+    padding: 0rem 0rem 1rem 0rem;
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.helpForm > header > h5 {
+    color: var(--green_color);
+    font-size: 1.25rem;
+}
+
+.helpForm > form > div {
+    margin-bottom: 1rem
+}
+
+.helpForm > form > div > label {
+    display: block;
+    margin-bottom: 0.1rem;
+    font-size: 1rem;
+}
+
+.helpForm > form > div > label > span {
+    color: rgb(219, 2, 2);
+    padding-left: 2px;
+    font-weight: 800;
+}
+
+.helpForm > form > div > input {
+    border: 1px solid var(--light_text_color);
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%
+}
+
+.helpForm > form > button {
+    background-color: var(--dark_color);
+    color: white;
+
+    padding: 0.55rem 1.75rem;
+    margin-top: 1rem;
+    border: 1px solid var(--dark_color);
+    outline: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    width: 100%
+}
+
+@media(min-width: 1025px) {
+
+    .helpForm {
+        display: block;
+    }
+    
+}

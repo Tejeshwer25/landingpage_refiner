@@ -1,0 +1,94 @@
+.loginModal {
+    position: absolute;
+    top: -10%;
+    left: 0%;
+
+    background-color: #666;
+    opacity: 0.3;
+    min-width: 200px;
+    width: 100% !important;
+    height: 120vh;
+    z-index: 1000;
+}
+
+.innerLoginModal {
+    display: block !important;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+
+    width: 25% !important;
+    background-color: #fff;
+    z-index: 1000000000;
+    border-radius: 5px;
+
+    padding: 1rem 2rem;
+}
+
+.innerLoginModal > header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light_text_color);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.innerLoginModal > header > h3 {
+    font-size: 1.5rem;
+}
+
+.innerLoginModal > form > div {
+    margin-bottom: 1rem
+}
+
+.innerLoginModal > form > div > label {
+    display: block;
+    margin-bottom: 0.1rem;
+    font-size: 1rem;
+}
+
+.innerLoginModal > form > div > label > span {
+    color: rgb(219, 2, 2);
+    padding-left: 2px;
+    font-weight: 800;
+}
+
+.innerLoginModal > form > div > input {
+    border: 1px solid var(--light_text_color);
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%
+}
+
+.innerLoginModal > form > p {
+    color: var(--green_color);
+    font-size: 0.75rem;
+}
+
+.innerLoginModal > p {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+.innerLoginModal > p > span {
+    color: var(--green_color);
+}
+
+.innerLoginModal > form > button {
+    background-color: var(--dark_color);
+    color: white;
+
+    padding: 0.55rem 1.75rem;
+    margin-top: 1rem;
+    border: 1px solid var(--dark_color);
+    outline: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    width: 100%
+}

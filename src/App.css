@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --body_background_color: #ebf9ff;
+  --dark_color: #0F1011;
+  --green_color: #008080;
+  --brandLogo_color: #1F5262;
+  --light_text_color: #838383;
+  --light_background: #EEF1F7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: var(--body_background_color) !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App > div {
+  margin: 2rem auto;
+  width: 85%;
+}
+
+.toast {
+  position: absolute;
+  background-color: var(--green_color);
   color: white;
+  width: 20% !important;
+  min-width: 100px !important;
+
+  right: 5rem;
+  top: -1rem;
+  padding: 1rem;
+  z-index: 100000000000000000;
 }
 
-.App-link {
-  color: #61dafb;
+@media(min-width: 770px) {
+  .App > div {
+    width: 87%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

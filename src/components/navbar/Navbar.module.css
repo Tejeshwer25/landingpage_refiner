@@ -1,0 +1,136 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+
+    padding: 1.25rem 1.3rem;
+}
+
+.navbar__buttons > button {
+    border: 1px solid var(--dark_color);
+    outline: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.navbar__buttons > .loginBtn {
+    background-color: white;
+
+    padding: 0.55rem 2.25rem;
+    margin: 0rem 1rem;
+}
+
+.navbar__buttons > .loginBtn:hover {
+    background-color: var(--body_background_color);
+}
+
+.navbar__buttons > .registerBtn {
+    background-color: var(--dark_color);
+    color: white;
+
+    padding: 0.55rem 1.75rem;
+}
+
+.navbar__buttons > .registerBtn > img {
+    transform: rotate(90deg);
+    width: 10px;
+    margin-left: 0.5rem;
+}
+
+.navbar__hamburgerMenu {
+    order: 1;
+    position: relative;
+}
+
+.navbar__hamburgerMenu > img {
+    cursor: pointer;
+}
+
+.navbar__hamburgerMenu > div {
+    position: absolute;
+    top: -1.75rem;
+    right: -1.3rem;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    height: 100vh;
+    width: 18rem;
+    
+    padding: 2rem;
+    z-index: 3
+}
+
+.navbar__hamburgerMenu > div > img {
+    width: 1.5rem;
+    position: relative;
+    right: -90%;
+    cursor: pointer;
+}
+
+.navbar__hamburgerMenu > div > ul {
+    list-style: none;
+    text-align: left;
+    margin: 1.75rem;
+} 
+
+.navbar__hamburgerMenu > div > ul > li {
+    margin: 1.5rem 0rem;
+    cursor: pointer;
+}
+
+.navbar__links {
+    display: none;
+}
+
+.navbar__links > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar__links > ul > li {
+    margin: 0rem 1rem;
+    font-weight: 600;
+    z-index: 200;
+}
+
+.slider > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider > div > p {
+    width: 50%;
+}
+
+
+@media(min-width: 770px) {
+    .navbar__brand {
+        margin-left: 4rem;
+    }
+
+    .navbar__links {
+        display: block;
+        order: 1;
+    }
+
+    .navbar__hamburgerMenu {
+        display: none
+    }
+
+    .navbar__buttons {
+        order: 1;
+        margin-right: 4rem;
+    }
+}

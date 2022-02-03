@@ -1,0 +1,12 @@
+[{"id":1,"label":"Legal", "value": "Legal"},
+{"id":2,"label":"Engineering", "value": "engineering"},
+{"id":4,"label":"Support", "value": "support"},
+{"id":5,"label":"Research and Development", "value":"researchanddevelopment"},
+{"id":6,"label":"Services", "value": "services"},
+{"id":8,"label":"Training", "value":"training"},
+{"id":12,"label":"Product Management", "value":"productmanagement"},
+{"id":13,"label":"Marketing", "value": "marketing"},
+{"id":19,"label":"Business Development", "value":"businessdevelopment"},
+{"id":21,"label":"Human Resources", "value":"humanresources"},
+{"id":25,"label":"Accounting", "value": "accounting"},
+{"id":30,"label":"Sales", "value": "sales"}]
