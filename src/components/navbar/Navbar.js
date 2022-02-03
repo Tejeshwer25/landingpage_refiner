@@ -27,11 +27,10 @@ const Navbar = ({setLoginOpen, userDetails}) => {
             </div>
 
 
-            {userDetails ? <div className={styles.navbar__buttons}>
-                                <button className={styles.loginBtn} onClick={() => setLoginOpen(true)}>Login</button>
-                                <button className={styles.registerBtn}>Register <img src={arrowHeadIcon} alt="" /></button>
-                            </div>
-            : ''}
+            <div className={styles.navbar__buttons}>
+                <button className={styles.loginBtn} onClick={() => setLoginOpen(true)}>Login</button>
+                <button className={styles.registerBtn}>Register <img src={arrowHeadIcon} alt="" /></button>
+            </div>
             
 
             <div className={styles.navbar__hamburgerMenu}>
@@ -41,8 +40,8 @@ const Navbar = ({setLoginOpen, userDetails}) => {
                     <img src={closeIcon} alt="" onClick={() => setNavbarOpen(false)}/>
                     <ul>
                         <li>Marketplace </li>
-                        {userDetails ? <li onClick={() => setLoginOpen(true)}>Login</li> : ''}
-                        {userDetails ? <li>Register</li> : ''}
+                        <li onClick={() => setLoginOpen(true)}>Login</li> 
+                        <li>Register</li>
                     </ul>
                 </div>
             </div>
